@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable-no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <form action="#">
+                <h2>Ми хотіли б вам допомогти</h2>
+                <input class="input" placeholder="Ім'я" required type="text">
+                <textarea class="input" placeholder="Повідомлення"></textarea>
+                <h3>Як вам відповісти?</h3>
+                <input class="input" pattern="[0-9]{5,12}" placeholder="Номер телефона" required type="text">
+                <input class="input" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Чи email" required type="email">
+                <button class="btn" type="submit">Надіслати запит</button>
+            </form>
+        </div>
+    </main>
+</body>

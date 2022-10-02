@@ -1,0 +1,126 @@
+@font-face {
+    font-family: "TTNorms";
+    font-weight: 700;
+    src: local("TTNorms-Bold"), 
+    url("/fonts/TTNorms-Bold.otf") format("otf"), 
+    url("/fonts/TTNorms-Bold.woff") format("woff"), 
+    url("/fonts/TTNorms-Bold.woff2") format("woff2")
+}
+
+@font-face {
+    font-family: "TTNorms";
+    font-weight: 400;
+    src: local("TTNorms-Regular"), 
+    url("/fonts/TTNorms-Regular.otf") format("otf"), 
+    url("/fonts/TTNorms-Regular.woff") format("woff"),
+    url("/fonts/TTNorms-Regular.woff2") format("woff2")
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+
+    color: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-family: inherit;
+}
+
+input[type='button'], button {
+    cursor: pointer;
+} 
+
+body {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-family:'TTNorms', sans-serif;
+}  
+
+h2 {
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.container {
+    max-width: 527px;
+    margin: 100px auto;
+}
+
+form {
+    background: #49b18e;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+form h2 {
+    background: linear-gradient (90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+form h3 {
+    font-size: 14px;
+    line-height: 17px; 
+    letter-spacing: 1px;
+    text-transform: uppercase;   
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+form textarea {
+    height: 180px;
+    resize: none;
+}
+
+.input {
+    background: #FFFFFF;
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    line-height: 26px;
+    border-radius: 8px;
+    padding: 11px 10px 10px;
+    margin-bottom: 20px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+} 
+
+.input:focus{
+    border-color: #24A3FF;
+}
+
+.btn {
+    padding: 16px 24px 17px;
+    background: #24A3FF;
+    color: #FFFFFF;
+    display: block;
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    font-weight: bold; 
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #0085FF;
+    box-shadow: 0 0 30px rgba(36, 163, 255, 0.5);
+}
+
+.btn:active {
+    background: #006CCF;
+}
+
+form .btn {
+    max-width: 250px;
+    width: 100%;
+    margin: 0 auto;
+}
